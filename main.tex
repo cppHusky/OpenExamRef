@@ -1,7 +1,7 @@
 \documentclass[twoside]{ctexart}
 \usepackage{bookmark}
 \usepackage{fancyhdr}
-\usepackage[a4paper,left=3mm,right=3mm,top=4mm,bottom=12mm]{geometry}
+\usepackage[a4paper,landscape,left=3mm,right=3mm,top=4mm,bottom=12mm]{geometry}
 \usepackage{hyperref}
 \usepackage{pdfpages}
 \usepackage{titletoc}
@@ -9,7 +9,7 @@
 	\clearpage
 	\phantomsection
 	\addcontentsline{toc}{section}{#2}
-	\includepdf[pagecommand={\thispagestyle{plain}},nup=2x4,pages={#1}]{#3}
+	\includepdf[pagecommand={\thispagestyle{plain}},nup=3x3,pages={#1}]{#3}
 }
 \title{\textbf{脑与认知科学课件}\\（开卷考试用）}
 \author{\textit{cppHusky}}
