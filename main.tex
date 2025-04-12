@@ -1,0 +1,37 @@
+\documentclass[twoside]{ctexart}
+\usepackage{bookmark}
+\usepackage{fancyhdr}
+\usepackage[a4paper,landscape,left=3mm,right=3mm,top=4mm,bottom=12mm]{geometry}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{titletoc}
+\newcommand{\includepdfwithpage}[3]{
+	\clearpage
+	\phantomsection
+	\addcontentsline{toc}{section}{#2}
+	\includepdf[pagecommand={\thispagestyle{plain}},nup=3x3,pages={#1}]{#3}
+}
+\title{\textbf{软件工程课件}\\（开卷考试用）}
+\author{\textit{cppHusky}}
+\date{\today}
+\titlecontents{section}[1em]
+	{}
+	{\bfseries\contentslabel[\thecontentslabel.0]{2em}\MakeUppercase}
+	{\bfseries}
+	{\titlerule*[.5em]{.}\contentspage}
+\begin{document}
+\maketitle
+\hypersetup{hidelinks}
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyfoot[LE,RO]{\Large\textbf{\thepage}}
+}
+\pagestyle{plain}
+\tableofcontents\newpage
+\includepdfwithpage{1-9,11-19}{软件工程概述}{assets/02-软件工程概述}
+\includepdfwithpage{1-53}{生命周期模型}{assets/03-软件生命周期模型}
+\includepdfwithpage{1-3,5-24}{需求分析}{assets/04-软件需求分析}
+\includepdfwithpage{1-14}{UML简介}{assets/05-面向对象分析-UML简介}
+\includepdfwithpage{1-24}{领域模型}{assets/06-面向对象分析-领域模型}
+\includepdfwithpage{1-21}{用例模型}{assets/07-面向对象分析-用例模型}
+\end{document}
