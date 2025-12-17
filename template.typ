@@ -40,7 +40,6 @@
   v(3mm)
   show:strong
   outline(title:[目录])
-  pagebreak()
   set align(horizon)
   body
 }
