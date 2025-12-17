@@ -9,3 +9,16 @@ git clone https://github.com/cppHusky/OpenExamRef.git --single-branch --branch �
 ```
 
 如欲提交 PR，请在对应科目名的 Branch 下进行，如 [脑与认知科学](https://github.com/cppHusky/OpenExamRef/tree/%E8%84%91%E4%B8%8E%E8%AE%A4%E7%9F%A5%E7%A7%91%E5%AD%A6)。
+
+## 构建方法
+
+需要安装以下依赖：
+
+- [Typst CLI](https://typst.app)
+- [GNU Make](https://www.gnu.org/software/make/)
+
+自行编写 `main.typ`，格式可参考其它 Branch。编写完成后，运行如下命令：
+
+```shell
+make
+```
