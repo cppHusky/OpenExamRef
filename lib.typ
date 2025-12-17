@@ -18,6 +18,7 @@
 }
 #let addpdf(title,file,page-range)=[
   #let pages=parse-pages(page-range)
+  #pagebreak()
   = #title
   #grid(
     columns:(1fr,1fr,1fr),
@@ -26,5 +27,4 @@
       p=>image(file,page:p,width:100%)
     )
   )
-  #pagebreak()
 ]
