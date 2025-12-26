@@ -2,6 +2,11 @@
 
 本项目用于整理和组织适用于开卷考试的资料。每个 Branch 对应一门学科。
 
+以下为范例：
+
+> ![目录页](./.assets/toc.png)
+> ![样例页](./.assets/page-example.png)
+
 如欲 Clone，可以只拷贝你需要的 Branch，例如：
 
 ```shell
@@ -16,6 +21,8 @@ git clone https://github.com/cppHusky/OpenExamRef.git --single-branch --branch �
 
 - [Typst CLI](https://typst.app)
 - [GNU Make](https://www.gnu.org/software/make/)
+
+准备好 PDF 格式的所需资料。如果是 PPT，请先将其导出为 PDF。
 
 自行编写 `main.typ`，格式可参考其它 Branch。编写完成后，运行如下命令：
 
