@@ -1,7 +1,7 @@
 #import "lib.typ":*
 #import "template.typ":default-template
 #let mainmatter={
-  addpdf("软件工程概述","assets/02-软件工程概述.pdf","1-9,11-19")
+  addpdf("软件工程概述","assets/02-软件工程概述.pdf","1-9, 11-19")
   addpdf("软件生命周期模型","assets/03-软件生命周期模型.pdf","1-53")
   addpdf("软件需求分析","assets/04-软件需求分析.pdf","1-3,5-24")
   addpdf("面向对象需求分析","assets/05-面向对象需求分析.pdf","1-59")

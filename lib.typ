@@ -1,5 +1,6 @@
 #let parse-pages(page-range)={
   let pages=()
+  let page-range=page-range.replace(regex("\s+?"),"")
   let parts=page-range.split(",")
   for part in parts{
     if part.contains("-"){
