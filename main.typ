@@ -2,7 +2,7 @@
 #import "template.typ":default-template
 
 #let mainmatter={
-  addpdf("第一章","assets/人工智能引论-第一章.pdf","1, 4-66")
+  addpdf("第一章","assets/人工智能引论-第一章.pdf","1,4-66")
   addpdf("第二章","assets/人工智能引论-第二章.pdf","1-91")
   addpdf("第三章","assets/人工智能引论-第三章.pdf","1-82")
   addpdf("第三章-决策树","assets/人工智能引论-第三章决策树.pdf","1-39")
