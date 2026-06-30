@@ -15,10 +15,20 @@
     footer:context{
       set text(size:24pt)
       let pagenumber=counter(page).get().first()
+      let heading-1=query(selector(heading.where(level:1).after(here()))).filter(h=>{
+        h.location().page()==here().page()
+      }).first(default:none)
+      let heading-1=if heading-1==none {
+        query(selector(heading.where(level:1).before(here()))).last()
+      } else {
+        heading-1
+      }
       if calc.even(pagenumber) [
         #pagenumber
         #h(1fr)
-      ]else[
+        #heading-1.body
+      ] else [
+        #heading-1.body
         #h(1fr)
         #pagenumber
       ]
